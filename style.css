@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+     background-color: #151414;
+}
+.continer{
+    height: 100vh;
+    width: 90%;
+}
+.continer h1{
+    color: rgb(13, 201, 75);
+    text-align: center;
+    padding-top: 50px;
+    font-size: 50px;
+    margin-left: 30px;
+}
+.continer .posts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+gap: 40px ;
+margin-left: 150px;
+margin-top: 100px;
+
+   
+}
+.continer .posts .post{
+    position: relative;
+background-color: #393838;
+    overflow: hidden;
+    border-radius: 10px;
+
+}
+.continer .posts .post:hover .layer{
+    height: 100%;
+     
+}
+
+.continer .posts .post img{
+    width: 100%;
+    border-radius: 10px;
+   
+}
+.continer .posts .post .layer {
+text-align: center;
+    color: aliceblue;
+      height: 0;
+      width: 100%;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      /* background-color: green; */
+     background: linear-gradient(rgba(0,0,0,0.5),rgb(3, 152, 3));
+     transition: all ease 3s;
+
+}
+.continer .posts .post .layer h3{
+    font-weight: 400;
+    padding-bottom: 10px;
+}
+.continer .posts .post .layer p{
+   margin-bottom: 10px;
+}
+.continer .posts .post .layer a{
+    text-shadow: white 10px;
+   padding: 10px;
+   background-color: aliceblue;
+   border-radius: 50%;
+}
